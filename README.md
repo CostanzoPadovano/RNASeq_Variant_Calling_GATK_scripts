@@ -41,7 +41,8 @@ To run the pipeline, modify the parameters in .sh files to match the paths to yo
 bash run_pipeline.sh
 
 The pipeline will generate a VCF file containing the called variants in the output directory.
-Dependencies
+
+## Dependencies
 
 The scripts require the following software to be installed:
 
