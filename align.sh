@@ -1,42 +1,9 @@
 #!/bin/bash
-
-# Script to call germline variants in a human WGS paired end reads 2 X 100bp
-# Following GATK4 best practices workflow - https://gatk.broadinstitute.org/hc/en-us/articles/360035535932-Germline-short-variant-discovery-SNPs-Indels-
-# This script is for demonstration purposes only
-
-
-# download data
-##wget ftp://ftp-trace.ncbi.nih.gov/1000genomes/ftp/phase3/data/HG00096/sequence_read/SRR062634_1.filt.fastq.gz
-##wget ftp://ftp-trace.ncbi.nih.gov/1000genomes/ftp/phase3/data/HG00096/sequence_read/SRR062634_2.filt.fastq.gz
-
-
-##echo "Run Prep files..."
-
-################################################### Prep files (TO BE GENERATED ONLY ONCE) ##########################################################
-
-
-
-# download reference files
-##wget -P ~/Desktop/demo/supporting_files/hg38/ https://hgdownload.soe.ucsc.edu/goldenPath/hg38/bigZips/hg38.fa.gz
-##gunzip ~/Desktop/demo/supporting_files/hg38/hg38.fa.gz
-
-# index ref - .fai file before running haplotype caller
-##samtools faidx ~/Desktop/demo/supporting_files/hg38/hg38.fa
-
-
-# ref dict - .dict file before running haplotype caller
-##gatk CreateSequenceDictionary R=~/Desktop/demo/supporting_files/hg38/hg38.fa O=~/Desktop/demo/supporting_files/hg38/hg38.dict
-
-
-# download known sites files for BQSR from GATK resource bundle
-##wget -P ~/Desktop/demo/supporting_files/hg38/ https://storage.googleapis.com/genomics-public-data/resources/broad/hg38/v0/Homo_sapiens_assembly38.dbsnp138.vcf
-##wget -P ~/Desktop/demo/supporting_files/hg38/ https://storage.googleapis.com/genomics-public-data/resources/broad/hg38/v0/Homo_sapiens_assembly38.dbsnp138.vcf.idx
-
-
+#I got part of this code from kpatel427 (github name) and I adapted it for RNA-seq variant calling following this guide: https://gatk.broadinstitute.org/hc/en-us/articles/360035531192-RNAseq-short-variant-discovery-SNPs-Indels-
 
 ###################################################### VARIANT CALLING STEPS ####################################################################
 
-#MODIFY
+#ToMODIFY
 # directories 
 ref="./hg38_fa/hg38.fa"
 known_sites="hg38/Homo_sapiens_assembly38.dbsnp138.vcf"
@@ -49,7 +16,6 @@ results="/results"
 data="/data"
 Threads_choosed=22
 picard="../Script_run/picard.jar"
-
 
 # -------------------
 # STEP 1: QC - Run fastqc 
