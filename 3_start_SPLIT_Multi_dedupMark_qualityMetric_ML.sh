@@ -2,7 +2,7 @@
 
 
 
-for value in 1R-1068217
+for value in 11R-1075341 12R-1074157 6R-1073365 7R-1071737 8R-1075225
 do
 	echo "$value"
 	cd $value
