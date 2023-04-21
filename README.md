@@ -36,7 +36,7 @@ The scripts are organized into several files:
     filter_variants.sh: Filters variants using GATK VariantFiltration.
     run_pipeline.sh: Runs the entire variant calling pipeline.
 
-To run the pipeline, modify the parameters in run_pipeline.sh to match the paths to your input files and the desired output directory. Then, run the pipeline using the following command:
+To run the pipeline, modify the parameters in .sh files to match the paths to your input files and the desired output directory. Then, run the pipeline using the following command:
 
 bash run_pipeline.sh
 
