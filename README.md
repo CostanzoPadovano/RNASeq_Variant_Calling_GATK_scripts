@@ -24,7 +24,7 @@ The scripts perform the following steps:
 
 To use the scripts, clone the repository to your local machine:
 
-git clone https://github.com/username/RNASeq_Variant_Calling_GATK_scripts.git
+git clone https://github.com/CostanzoPadovano/RNASeq_Variant_Calling_GATK_scripts.git
 
 The scripts are organized into several files:
 
