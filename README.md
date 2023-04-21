@@ -28,13 +28,13 @@ git clone https://github.com/CostanzoPadovano/RNASeq_Variant_Calling_GATK_script
 
 The scripts are organized into several files:
 
-1_start_Multi_aligner.sh
-2_start_Multi_dedupMark.sh
-3_start_SPLIT_Multi_dedupMark_qualityMetric_ML.sh
-4_start_HaplotypeCaller_variant_calling.sh
-5_start_variant_filter_for_FP.sh
-6_snpEFF_variant_call_selected.sh
-align.sh
+    1_start_Multi_aligner.sh
+    2_start_Multi_dedupMark.sh
+    3_start_SPLIT_Multi_dedupMark_qualityMetric_ML.sh
+    4_start_HaplotypeCaller_variant_calling.sh
+    5_start_variant_filter_for_FP.sh
+    6_snpEFF_variant_call_selected.sh
+    align.sh
 
 
 To run the pipeline, modify the parameters in .sh files to match the paths to your input files and the desired output directory. Then, run the pipeline using the following command:
